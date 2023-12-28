@@ -1,6 +1,6 @@
 locale: "en-US"
 url: http://hyderabadclimbers.in
-baseurl: ""   # /agency-jekyll-theme/
+baseurl: /agency-jekyll-theme/
 repository:"advenrenuka/advenrenuka.github.io"
 
 # Site settings
