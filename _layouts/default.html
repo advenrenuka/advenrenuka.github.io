@@ -1,11 +1,15 @@
+---
+image_sliders:
+  - hero_slider
+---
 <!DOCTYPE html>
 <html>
 
   {% include head.html %}
 
 
-    <body id="page-top" class="index">
-
+  <body id="page-top" class="index">
+    {% include slider.html selector="hero_slider" %}
     {% include header.html %}
     {% include services.html %}
     {% include portfolio_grid.html %}
@@ -17,5 +21,6 @@
     {% include modals.html %}
     {% include js.html %}
 
-    </body>
+  </body>
+  {% include slider_scripts.html %}
 </html>
