@@ -1,0 +1,24 @@
+{
+  "files.associations": {
+    "**/*.html": "liquid",
+    "**/*.css":"liquid-css",
+    "**/*.js":"liquid-javascript",
+    "**/*.scss":"liquid-scss"
+  },
+  "[liquid]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid",
+    "editor.formatOnSave": true
+  },
+  // Enables formatting of all .css.liquid files
+  "[liquid-css]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid",
+    "editor.formatOnSave": true
+  },
+  "[liquid-javascript]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid",
+    "editor.formatOnSave": true
+  },
+  "[liquid-scss]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid",
+  },
+}
