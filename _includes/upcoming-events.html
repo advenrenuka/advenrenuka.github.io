@@ -1,0 +1,52 @@
+<section id="upcoming-events">
+  <div class="container-xl my-5 pt-5">
+    <div class="row py-3">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Upcoming Events</h2>
+      </div>
+    </div>
+    <div class="row align-items-center justify-content-center gy-5">
+      <div id="no-upcoming-events" class="d-none w-100 text-center">No upcomming events found</div>
+      {% for event in site.data.events %}
+
+        <div class="col-md-4 col-12 upcoming-event" future-date="{{ event.end_date | date: '%Y-%m-%d' }}">
+          <div class="card mx-auto" style="width: 18rem;">
+            <div class="row g-0">
+              <h5 class="card-header">{{ event.name }}</h5>
+              <div class="card-body">
+                <div class="card-text">
+                  <div>
+                    <span>Location :
+                    </span>
+                    <a href={{ event.location_href }}>
+                      {{ event.location }}</a>
+                  </div>
+                  <div>
+                    <span>
+                      Dates :
+                    </span>
+                    <span>
+                      {{ event.start_date }} -
+                      {{ event.end_date }}
+                    </span>
+                    <div>
+
+                      <span>
+                        Time :
+                      </span>
+                      <span>
+                        {{ event.time }}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#upcoming_events" class="btn btn-primary px-4 my-3">Join</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
