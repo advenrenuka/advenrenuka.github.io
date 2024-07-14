@@ -1,6 +1,11 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
   <div class="container-xl bd-gutter flex-wrap flex-lg-nowrap">
+    <img
+      src="/img/logos/logo.jpg"
+      class="mx-2"
+      alt="Hyderabad climbers logo"
+      width="40px" />
     <a class="navbar-brand" href="#">{{ site.title }}</a>
     <button
       class="navbar-toggler"
@@ -14,20 +19,85 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarnavDropdown">
       <ul class="navbar-nav me-auto">
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            data-bs-auto-close="outside"
+            aria-expanded="false">
+            Activities
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropend">
+              <a
+                class="dropdown-item dropdown-toggle"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="true"
+                href="#">Beginners workshops</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item ps-4 ps-md-3">Basic Rock Climbing</a>
+                </li>
+                <li>
+                  <a href="" class="dropdown-item ps-4 ps-md-3">Basic Crack Climbing</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropend">
+              <a
+                class="dropdown-item dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#">Rapelling</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item ps-4 ps-md-3">Basic Rapelling</a>
+                </li>
+                <li>
+                  <a class="dropdown-item ps-4 ps-md-3">Australian Rapelling</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropend">
+              <a
+                class="dropdown-item dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#">Beginners Sport Climbing</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" class="dropdown-item ps-4 ps-md-3">Top Rope Climbing</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item ps-4 ps-md-3">Lead Climbing</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item ps-4 ps-md-3">Belay Workshops</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropend">
+              <a
+                class="dropdown-item dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#">Advanced Sport Climbing</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" class="dropdown-item ps-4 ps-md-3">Multi-pitch Climbing</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li class="nav-item">
           <a class="nav-link active" href="#events">Events
 
           </a>
         </li>
-        {% comment %} <li class="nav-item">
-                                                  <a class="nav-link" href="#portfolio">Past Events</a>
-                                        </li> {% endcomment %}
         <li class="nav-item">
           <a class="nav-link" href="#upcoming-events">Upcoming Events</a>
         </li>
-        {% comment %} <li class="nav-item">
-                                        <a class="nav-link" href="#team">Team</a>
-                                </li> {% endcomment %}
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
         </li>
