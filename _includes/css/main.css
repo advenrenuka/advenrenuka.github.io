@@ -54,6 +54,13 @@
 
 }
 
+#activities::after {
+  transform: rotate(180deg);
+}
+
+#activities.show::after {
+  transform: rotate(0deg);
+}
 @media (max-width: 992px) {
   .intro-text {
     width: 50%;
@@ -67,10 +74,13 @@
 
 }
 .dropend .dropdown-toggle::after {
-;
-margin-left: 1rem
-}
 
+  transform: rotate(90deg);
+  margin-left: 1rem
+}
+.dropdown-item.dropdown-toggle.show:after {
+  transform: rotate(0deg);
+}
 .dropdown-menu {
   border: none;
 }
